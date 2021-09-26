@@ -20,7 +20,7 @@ jobs:
           make generate
       - name: Test package
         run: go test -v -cover -covermode=atomic -race -coverprofile=coverage.out ./...
-      - name: Build Server
-        run: docker build -t catly-server .
+      - name: Build server
+        run: go build -o grpc-upload cmd/server/main.go 
       - name: Build client
-        run:  go build -o grpc-upload cmd/client/main.go
+        run: go build -o grpc-upload cmd/client/main.go
