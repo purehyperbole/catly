@@ -52,7 +52,7 @@ func main() {
 	switch storagePath {
 	case DefaultStoragePath:
 		sp = storage.NewMemoryStore()
-	case "file":
+	default:
 		err = os.MkdirAll(storagePath, 0744)
 		check(err, "failed to create storage directory")
 
