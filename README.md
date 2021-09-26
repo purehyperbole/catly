@@ -1,4 +1,4 @@
-# Catly [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Go Reference](https://pkg.go.dev/badge/github.com/joinself/catly.svg)](https://pkg.go.dev/github.com/joinself/catly) [![Go Report Card](https://goreportcard.com/badge/github.com/purehyperbole/catly)](https://goreportcard.com/report/github.com/purehyperbole/catly) [![Build Status](https://github.com/purehyperbole/catly/workflows/main/badge.svg)](https://github.com/purehyperbole/catly/actions)
+# Catly [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Go Reference](https://pkg.go.dev/badge/github.com/joinself/catly.svg)](https://pkg.go.dev/github.com/joinself/catly) [![Go Report Card](https://goreportcard.com/badge/github.com/purehyperbole/catly)](https://goreportcard.com/report/github.com/purehyperbole/catly) ![example workflow](https://github.com/purehyperbole/catly/actions/workflows/main.yml/badge.svg)
 
 A file uploading service for your finest cat pictures 🐱
 
