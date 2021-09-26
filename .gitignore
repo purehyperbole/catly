@@ -1,0 +1,5 @@
+cmd/client/client
+cmd/server/server
+grpc-upload
+
+coverage.out

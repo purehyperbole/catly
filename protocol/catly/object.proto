@@ -1,0 +1,25 @@
+syntax = "proto3";
+package catly;
+
+option go_package = "github.com/purehyperbole/catly/protocol/catly";
+
+service Object {
+    // Uploads a file to the hosting service
+    rpc Upload (UploadObjectRequest) returns (UploadObjectResponse) {}
+}
+
+enum ObjectStatus {
+    ObjectOK = 0;
+    ObjectERR = 1;
+}
+
+message UploadObjectRequest {
+    string name = 1;
+    bytes  data = 2;
+}
+
+message UploadObjectResponse {
+    ObjectStatus status = 1;
+    string       error  = 2;
+    string       url    = 3;
+}
