@@ -19,7 +19,7 @@ jobs:
           go install github.com/golang/protobuf/protoc-gen-go
           make generate
       - name: Test package
-        run: go test -v -cover -covermode=atomic -race -coverprofile=coverage.out $(shell go list ./...)
+        run: go test -v -cover -covermode=atomic -race -coverprofile=coverage.out ./...
       - name: Build Server
         run: docker build -t catly-server .
       - name: Build client
