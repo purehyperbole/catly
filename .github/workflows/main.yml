@@ -17,10 +17,9 @@ jobs:
           apt-get update
           apt-get -y install protobuf-compiler make docker
           go install github.com/golang/protobuf/protoc-gen-go
-          go install github.com/rakyll/gotest
           make generate
       - name: Test package
-        run: gotest -v -cover -covermode=atomic -race -coverprofile=coverage.out $(shell go list ./...)
+        run: go test -v -cover -covermode=atomic -race -coverprofile=coverage.out $(shell go list ./...)
       - name: Build Server
         run: docker build -t catly-server .
       - name: Build client
